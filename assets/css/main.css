@@ -1,0 +1,466 @@
+/*-----------------RESPONSIVE*/
+/*-----------------MAIN*/
+h1, h2, h3, h4, h5 {
+  color: #484f5b;
+}
+
+#SectionOne {
+  background-image: url("../images/pregnant-women.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 10% 0%;
+}
+
+.SectionWrappOne {
+  width: 70%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .SectionWrappOne {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .SectionWrappOne {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .SectionWrappOne {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .SectionWrappOne {
+    width: 85%;
+  }
+}
+
+.SectionWrappOne h1 {
+  font-size: 55px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 425px) {
+  .SectionWrappOne h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .SectionWrappOne h1 {
+    font-size: 45px;
+  }
+}
+
+.SectionWrappOne p {
+  margin: 3% 0%;
+  width: 30%;
+}
+
+@media only screen and (max-width: 425px) {
+  .SectionWrappOne p {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .SectionWrappOne p {
+    width: 50%;
+  }
+}
+
+.SectionWrappOne button {
+  padding: 0.6% 1.2%;
+  background-color: #f1cec8;
+  border: 1px solid #f1cec8;
+  color: #484f5b;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 425px) {
+  .SectionWrappOne button {
+    padding: 1.5% 2%;
+  }
+}
+
+.SectionWrappOne button:hover {
+  background-color: #f3d9d5;
+  border: 1px solid #f3d9d5;
+  cursor: pointer;
+}
+
+#SectionTwo {
+  padding: 4% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  #SectionTwo {
+    padding: 7% 0%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #SectionTwo {
+    padding: 6% 0%;
+  }
+}
+
+.SectionWrappTwo p {
+  text-align: center;
+  padding: 2% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  .SectionWrappTwo p {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.SectionWrappTwo h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#SectionThree {
+  background-color: #e5ccc6;
+  padding: 6% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  #SectionThree {
+    padding: 10% 0%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #SectionThree {
+    padding: 8% 0%;
+  }
+}
+
+.SectionWrappThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .SectionWrappThree {
+    width: 90%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .SectionWrappThree {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .SectionWrappThree {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .SectionWrappThree {
+    width: 85%;
+  }
+}
+
+.SectionWrappThree > div:last-child {
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+#YogaTraining h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#YogaTraining p {
+  margin: 6% 0%;
+  width: 65%;
+}
+
+#SectionFour {
+  background-color: #e9e8e6;
+  padding: 4% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  #SectionFour {
+    padding: 7% 0%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #SectionFour {
+    padding: 6% 0%;
+  }
+}
+
+#SectionFour h1 {
+  font-size: 55px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  #SectionFour h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #SectionFour h1 {
+    font-size: 45px;
+  }
+}
+
+.SectionWrappFour {
+  width: 70%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .SectionWrappFour {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .SectionWrappFour {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .SectionWrappFour {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .SectionWrappFour {
+    width: 85%;
+  }
+}
+
+#Programs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3%;
+}
+
+#Programs:nth-child(2) .Program:last-child {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media only screen and (max-width: 425px) {
+  #Programs > .Program {
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+  }
+}
+
+.Program {
+  width: 25%;
+  text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 5px 4px 12px 0px #8080804a;
+          box-shadow: 5px 4px 12px 0px #8080804a;
+}
+
+@media only screen and (max-width: 425px) {
+  .Program {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .Program {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #Programs > .Program img {
+    height: 450px;
+    width: 100%;
+  }
+}
+
+.Program img {
+  height: 480px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  .Program img {
+    height: 170px;
+    width: 100%;
+  }
+}
+
+.Program h3 {
+  font-size: 22px;
+  margin: 4% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  .Program h3 {
+    font-size: 18px;
+  }
+}
+
+.ProgramText {
+  padding: 5%;
+}
+
+#SectionFive {
+  background-color: #e5ccc6;
+  padding: 4% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  #SectionFive {
+    padding: 7% 0%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #SectionFive {
+    padding: 6% 0%;
+  }
+}
+
+#SectionFive h1 {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  #SectionFive h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #SectionFive h1 {
+    font-size: 45px;
+  }
+}
+
+.SectionWrappFive {
+  width: 70%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .SectionWrappFive {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .SectionWrappFive {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .SectionWrappFive {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .SectionWrappFive {
+    width: 85%;
+  }
+}
+
+.SocialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25%;
+}
+
+@media only screen and (max-width: 425px) {
+  .SocialIcons {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .SocialIcons {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  .SocialIcons {
+    width: 35%;
+  }
+}
+
+.SocialIcon {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  #Video {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #Video iframe {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #Video iframe {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #Video iframe {
+    width: 450px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

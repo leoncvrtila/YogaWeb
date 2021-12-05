@@ -1,0 +1,115 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+$medium-screens-mob: 425px + 1;
+$laptop-screens-laptop-small: 1024px - 1;
+$laptop-screens-laptop-big: 1440px + 1;
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $medium-screens-mob) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-screens-laptop-small) and (max-width: $laptop-screens-laptop-big) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------NAV*/
+
+nav {
+   display: flex;
+   justify-content: space-between;
+}
+
+nav a, nav a:active {
+  text-decoration: none;
+  color: #696969;
+}
+
+nav a:hover {
+  color: #9e9a9a;
+}
+
+#Nav {
+  @include respond-to(mob) { 
+    display: none;
+  }
+  @include respond-to(medium-screens) { 
+    display: block;
+  }
+  @include respond-to(laptop-screens) { 
+    display: block;
+  }
+  @include respond-to(wide-screens) { 
+    display: block;
+  }
+}
+
+#MobNavWrapp {
+  display: flex;
+  flex-direction: column;
+  @include respond-to(mob) { 
+    width: 90%;
+  }
+  @include respond-to(medium-screens) { 
+  
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#MobNav {
+  @include respond-to(mob) { 
+    display: none;
+    justify-content: end;
+    text-align: center;
+  }
+  @include respond-to(medium-screens) { 
+    display: none;
+  }
+  @include respond-to(laptop-screens) { 
+    display: none;
+  }
+  @include respond-to(wide-screens) { 
+    display: none;
+  }
+}
+
+#MobNav nav {
+  flex-direction: column;
+}
+
+#MobNavHamb {
+  @include respond-to(mob) { 
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  @include respond-to(medium-screens) { 
+    display: none;
+  }
+  @include respond-to(laptop-screens) { 
+    display: none;
+  }
+  @include respond-to(wide-screens) { 
+    display: none;
+  }
+}
+
+#MobNavHamb img {
+  width: 45px;
+}

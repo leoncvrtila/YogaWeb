@@ -1,0 +1,97 @@
+/*-----------------RESPONSIVE*/
+/*-----------------FOOTER*/
+footer {
+  background-color: #484f5b;
+  color: white;
+  padding: 3% 0%;
+}
+
+#FooterWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 425px) {
+  #FooterWrapp {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #FooterWrapp {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #FooterWrapp {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #FooterWrapp {
+    width: 85%;
+  }
+}
+
+footer a, footer a:active {
+  color: white;
+  text-decoration: none;
+  margin: 10% 0%;
+}
+
+.FooterLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 425px) {
+  #CompanyInfo {
+    width: 90%;
+  }
+}
+
+#CompanyInfo p {
+  margin: 10% 0%;
+}
+
+@media only screen and (max-width: 425px) {
+  #CompanyInfo p {
+    margin-bottom: 0%;
+  }
+}
+
+#FooterWrapp > div:last-child {
+  margin-top: auto;
+}
+
+#FooterLinksSocialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin-top: 7%;
+}
+
+#FooterLinksSocialIcons img {
+  height: 25px;
+  width: 25px;
+}
+/*# sourceMappingURL=footer.css.map */

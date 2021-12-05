@@ -1,0 +1,91 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+$medium-screens-mob: 425px + 1;
+$laptop-screens-laptop-small: 1024px - 1;
+$laptop-screens-laptop-big: 1440px + 1;
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $medium-screens-mob) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-screens-laptop-small) and (max-width: $laptop-screens-laptop-big) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------ACCORDION*/
+
+.Accordion {
+    padding: 1.5%;
+    background-color: white;
+    margin-top: 1%;
+    color: #525252;
+
+    @include respond-to(mob) { 
+      padding: 3.5%;
+    }
+    @include respond-to(medium-screens) { 
+    
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.AccordionTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.AccordionPlus {
+    border-radius: 100%;
+    border: 2px solid #525252;
+    padding: 0.4%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 1%;
+}
+
+.AccordionPlus p {
+    margin: auto;
+    color: #525252;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#AccordionText1, #AccordionText2, #AccordionText3 {
+    display: none;
+}
+
+.AccordionText {
+    width: 80%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.AccordionTitle {
+    margin-left: 1%;
+}
+
+.AccordionTitle h2 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+

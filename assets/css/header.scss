@@ -1,0 +1,132 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+$medium-screens-mob: 425px + 1;
+$laptop-screens-laptop-small: 1024px - 1;
+$laptop-screens-laptop-big: 1440px + 1;
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $medium-screens-mob) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-screens-laptop-small) and (max-width: $laptop-screens-laptop-big) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------HEADER*/
+
+header {
+  background-color: white;
+}
+
+#HeaderTop {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding-top: 1.5%;
+}
+
+#HeaderTop > div:first-child {
+  width: 40%;
+}
+
+#HeaderTop > div:nth-child(2) {
+  width: 90%;
+  margin: auto;
+
+}
+
+#HeaderBottom {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding: 3% 0%;
+  @include respond-to(mob) { 
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  @include respond-to(medium-screens) { 
+    width: 90%;
+  }
+  @include respond-to(laptop-screens) { 
+    width: 85%;
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#HeaderBottomLeft img {
+  width: 90%;
+}
+
+#HeaderBottomRight {
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  @include respond-to(mob) { 
+    width: 90%;
+  }
+  @include respond-to(medium-screens) { 
+    width: 50%;
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#HeaderBottomRight p {
+  margin: 10% 0%;
+}
+
+#HeaderBottomRight h1 {
+  font-size: 55px;
+  font-weight: 600;
+  text-transform: capitalize;
+  @include respond-to(mob) { 
+    font-size: 35px;
+  }
+  @include respond-to(medium-screens) { 
+    font-size: 35px;
+  }
+  @include respond-to(laptop-screens) { 
+  
+  }
+  @include respond-to(wide-screens) { 
+  
+  }
+}
+
+#HeaderBottomRight button {
+  padding: 2% 4%;
+  background-color: #f1cec8;
+  border: 1px solid #f1cec8;
+  color: #484f5b;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#HeaderBottomRight button:hover {
+  background-color: #f3d9d5;
+  border: 1px solid #f3d9d5;
+  cursor: pointer;
+}
+
+.Logo img {
+  width: 70px;  
+}

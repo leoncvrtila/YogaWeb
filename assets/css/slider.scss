@@ -1,0 +1,95 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+$medium-screens-mob: 425px + 1;
+$laptop-screens-laptop-small: 1024px - 1;
+$laptop-screens-laptop-big: 1440px + 1;
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $medium-screens-mob) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-screens-laptop-small) and (max-width: $laptop-screens-laptop-big) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------SLIDER*/
+
+.GallerySlider {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    margin-top: 1%;
+
+    @include respond-to(mob) { 
+      width: 90%;
+    }
+    @include respond-to(medium-screens) { 
+      width: 90%;
+    }
+    @include respond-to(laptop-screens) { 
+      width: 85%;
+    }
+    @include respond-to(wide-screens) { 
+      width: 85%;
+    }
+}
+
+#GallerySliderDots {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    @include respond-to(mob) { 
+      margin-top: 5%;
+    }
+    @include respond-to(medium-screens) { 
+    
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+    
+    }
+}
+
+.GalleryDot {
+    border-radius: 100%;
+    border: 2px solid #e5ccc6;
+    background-color: #e5ccc6;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.GalleryDot:nth-child(2), .GalleryDot:nth-child(3) {
+  background-color: transparent;
+}
+
+.GalleryDot:nth-child(2) {
+    margin: 0% 1%;
+}
+
+#GallerySlider2 {
+    display: none;
+}
+
+#GallerySlider3 {
+    display: none;
+}
+
+.GallerySlider p {
+  font-size: 12px;
+}

@@ -1,0 +1,125 @@
+/*-----------------RESPONSIVE*/
+/*-----------------NAV*/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav a, nav a:active {
+  text-decoration: none;
+  color: #696969;
+}
+
+nav a:hover {
+  color: #9e9a9a;
+}
+
+@media only screen and (max-width: 425px) {
+  #Nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #Nav {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #Nav {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #Nav {
+    display: block;
+  }
+}
+
+#MobNavWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 425px) {
+  #MobNavWrapp {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #MobNav {
+    display: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #MobNav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #MobNav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #MobNav {
+    display: none;
+  }
+}
+
+#MobNav nav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 425px) {
+  #MobNavHamb {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #MobNavHamb {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1023px) and (max-width: 1441px) {
+  #MobNavHamb {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #MobNavHamb {
+    display: none;
+  }
+}
+
+#MobNavHamb img {
+  width: 45px;
+}
+/*# sourceMappingURL=nav.css.map */
